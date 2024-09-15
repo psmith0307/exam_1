@@ -1,3 +1,4 @@
+# app/routes.py
 from flask import render_template
 from . import app
 
@@ -9,3 +10,6 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/exam')
+def exam():
+    return render_template('exam.html')
